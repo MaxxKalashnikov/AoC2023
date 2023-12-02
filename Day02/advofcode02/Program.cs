@@ -17,7 +17,6 @@ namespace advofcode02
             {
                 var gameParts = game.Split(":");
                 var gameName = gameParts[0].Trim();
-                var gameNames = gameName[1];
                 var sets = gameParts[1].Split(";").Select(s => s.Trim());
 
                 if (!totalCounts.ContainsKey(gameName))
@@ -33,21 +32,61 @@ namespace advofcode02
                         var parts = item.Trim().Split(" ");
                         var quantity = int.Parse(parts[0]);
                         var color = parts[1];
-                        totalCounts[gameName][color] = 0;
-                        totalCounts[gameName][color] += quantity;
+                        if (!totalCounts[gameName].ContainsKey(color) || quantity > totalCounts[gameName][color])
+                        {
+                            totalCounts[gameName][color] = quantity;
+                        }
                     }
                 }
                 
             }
+            int[] green = new int[lines.Length];
+            int[] red = new int[lines.Length];
+            int[] blue = new int[lines.Length];
+            int a = 0;
             foreach (var color in totalCounts.Values.SelectMany(g => g.Keys).Distinct())
             {
+                a = 0;
                 Console.WriteLine($"Total {color} cubes in each game:");
                 foreach (var (game, count) in totalCounts)
                 {
+                    switch (color)
+                    {
+                        case "green":
+                            green[a] = count.GetValueOrDefault(color, 0);
+                            break;
+                        case "red":
+                            red[a] = count.GetValueOrDefault(color, 0);
+                            break;
+                        case "blue":
+                            blue[a] = count.GetValueOrDefault(color, 0);
+                            break;
+                        default:
+                            break;
+                    }
                     Console.WriteLine($"{game}: {count.GetValueOrDefault(color, 0)}");
+                    a++;
                 }
-                Console.WriteLine();
+                Console.WriteLine();             
             }
+            int sum = 0;
+            int t = 1;
+            for (int i = 0; i < green.Length; i++)
+            {
+                if(green[i] <= 13 && red[i] <= 12 && blue[i] <= 14)
+                {
+                    sum += t;
+                }
+                t++;
+            }
+            Console.WriteLine("The first solution: " + sum);
+            double sum2 = 0;
+
+            for (int i = 0; i < green.Length; i++)
+            {
+                sum2 += green[i] * red[i] * blue[i];        
+            }
+            Console.WriteLine("The second solution: " + sum2);
         }
     }
 }
