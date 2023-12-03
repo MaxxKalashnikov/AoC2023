@@ -1,0 +1,16 @@
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\bin\Debug\net5.0\advofcode03.exe
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\bin\Debug\net5.0\advofcode03.deps.json
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\bin\Debug\net5.0\advofcode03.runtimeconfig.json
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\bin\Debug\net5.0\advofcode03.runtimeconfig.dev.json
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\bin\Debug\net5.0\advofcode03.dll
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\bin\Debug\net5.0\ref\advofcode03.dll
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\bin\Debug\net5.0\advofcode03.pdb
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.AssemblyInfo.cs
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.dll
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\ref\advofcode03.dll
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.pdb
+C:\Users\Максим\source\repos\advofcode01\Day03\advofcode03\obj\Debug\net5.0\advofcode03.genruntimeconfig.cache
