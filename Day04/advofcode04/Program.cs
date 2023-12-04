@@ -73,6 +73,7 @@ namespace advofcode04
                 //here i used Linq to get the info according to the task
                 foreach (var nextGame in gameCount.Where(x => x.Key > game.Key && x.Key <= game.Key + game.Value))
                 {
+                    //summing keys
                     cardCount[nextGame.Key] += cardCount[game.Key];
                 }
             }
